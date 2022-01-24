@@ -1,0 +1,8 @@
+#Gerätename gekürzt
+#uci set system.@system[0].hostname=Turris_Omnia-$(cat /sys/class/net/lan0/address | cut -d : -f 4- | sed -e 's/://g')
+#uci commit
+
+#Gerätename vollständig
+uci set system.@system[0].hostname=Turris_Omnia-$(cat /sys/class/net/lan0/address | sed -e 's/://g')
+uci commit
+exit 0
