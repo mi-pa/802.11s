@@ -7,7 +7,6 @@ config wifi-device 'radio_4x4_BGN'
 	option txpower '20'
 	option country 'DE'
 	option cell_density '0'
-	option disabled '1'
 
 config wifi-device 'radio_4x4_NAC'
 	option type 'mac80211'
